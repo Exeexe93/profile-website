@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  /* background-image: url("../images/feather.jpg");
+  background-repeat: no-repeat; */
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  justify-content: center;
+  width: 80%;
+}
+
+.header-middle {
+  position: fixed;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #031d94;
+  z-index: 10;
+}
+
+.nav-link {
+  background: linear-gradient(55deg, #c525aa 0%, #a154e9 51%, #3dc3f3 85%);
+  background-clip: text;
+  margin-left: 10px;
+  color: transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background: #03cee9;
+  background-clip: text;
+  color: transparent;
+}
+
+.home {
+  margin-top: 20%;
+  margin-bottom: 50%;
+}
+
+.title > h1,
+.title > h6 {
+  text-align: center;
+  color: blue;
+}
+
+.title > h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.title > h6 {
+  font-size: 16px;
+}
+
+.myphoto {
+  width: 500px;
+  height: 500px;
+  justify-self: center;
+  z-index: 2;
+}
+
+.photo-highlight {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+}
+
+.photo-highlight:before,
+.photo-highlight:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background-color: rgb(122, 204, 255);
+  z-index: 1;
+  filter: blur(40px);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about > p {
+  margin-top: 5%;
+  width: 60%;
+  color: white;
+  font-size: large;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.project-details {
+  width: 40%;
+  text-align: center;
+}
+
+.project-header {
+  color: white;
+}
+
+.project-details > p {
+  color: white;
+  text-align: justify;
+}
+
+.software-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.icon {
+  color: white;
+  -webkit-animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.image-icon {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  margin-bottom: 3px;
+}
+
+.nus-icon {
+  width: 25px;
+  height: 30px;
+}
+
+.section-header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.timeline ul {
+  border-left: 4px solid lightskyblue;
+  border-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0, 0.05);
+  margin: 0 auto;
+  position: relative;
+  padding: 5rem;
+  list-style: none;
+  text-align: left;
+  width: 70%;
+}
+
+.timeline h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+  color: white;
+}
+
+.timeline h5 {
+  opacity: 0.4;
+  color: white;
+}
+
+.timeline .date {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.timeline .date:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before {
+  color: white;
+  content: attr(data-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+}
+
+.timeline .date::after {
+  content: "";
+  box-shadow: 0 0 0 4px blueviolet;
+  background-color: blueviolet;
+  border-radius: 100%;
+  left: -5.8rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.timeline p {
+  color: white;
+  justify-content: justify;
+}
