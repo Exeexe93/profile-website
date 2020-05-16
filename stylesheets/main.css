@@ -1,11 +1,16 @@
 /* Declare variables for theme */
 :root {
   --background-color: black;
-  --hightlight-color: #bfa975;
+  --highlight-color: #bfa975;
   --section-header-color: white;
-  --text-color: #9f9fd5;
+  --text-color: white;
   --header-color: #5b63b7;
   --footer-color: #2a272a;
+  --timeline-point-color: #a883ba;
+  --timeline-date-color: #00c9c8;
+  --timeline-color: #5a3e51;
+  --timeline-seperator-color: white;
+  --icon-text-color: lightskyblue;
   --header-link-color: linear-gradient(
     55deg,
     #009de4 0%,
@@ -114,7 +119,7 @@ body {
   bottom: -2px;
   left: -2px;
   right: -2px;
-  background-color: var(--hightlight-color);
+  background-color: var(--highlight-color);
   z-index: 1;
   filter: blur(40px);
 }
@@ -130,7 +135,7 @@ body {
 .about > p {
   margin-top: 5%;
   width: 60%;
-  color: white;
+  color: var(--text-color);
   font-size: large;
 }
 
@@ -153,11 +158,11 @@ body {
 }
 
 .project-header {
-  color: white;
+  color: var(--text-color);
 }
 
 .project-details > p {
-  color: white;
+  color: var(--text-color);
   text-align: justify;
 }
 
@@ -169,14 +174,14 @@ body {
 .icon-link {
   display: flex;
   flex-direction: column;
-  color: lightskyblue;
+  color: var(--icon-text-color);
   background-color: var(--background-color);
   text-decoration: none;
   text-align: center;
 }
 
 .icon {
-  color: white;
+  color: var(--text-color);
   -webkit-animation: rotating 2s linear infinite;
 }
 
@@ -208,11 +213,11 @@ body {
 
 .section-header h1 {
   font-size: 50px;
-  color: white;
+  color: var(--text-color);
 }
 
 .timeline ul {
-  border-left: 4px solid lightskyblue;
+  border-left: 4px solid var(--timeline-color);
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0, 0.05);
   margin: 0 auto;
@@ -229,16 +234,16 @@ body {
   font-weight: 300;
   margin-bottom: 1rem;
   opacity: 0.3;
-  color: white;
+  color: var(--text-color);
 }
 
 .timeline h5 {
   opacity: 0.4;
-  color: white;
+  color: var(--text-color);
 }
 
 .timeline .date {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--timeline-seperator-color);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
@@ -259,7 +264,7 @@ body {
 }
 
 .timeline .date::before {
-  color: white;
+  color: var(--text-color);
   content: attr(data-date);
   left: -21rem;
   text-align: right;
@@ -268,8 +273,9 @@ body {
 
 .timeline .date::after {
   content: "";
-  box-shadow: 0 0 0 4px blueviolet;
-  background-color: blueviolet;
+  content: "";
+  box-shadow: var(--timeline-point-color);
+  background-color: var(--timeline-point-color);
   border-radius: 100%;
   left: -5.8rem;
   height: 1.5rem;
@@ -277,12 +283,12 @@ body {
 }
 
 .timeline p {
-  color: white;
+  color: var(--text-color);
   justify-content: justify;
 }
 
 .contact-container p {
-  color: white;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -293,7 +299,6 @@ body {
 }
 
 .github-icon {
-  color: white;
   margin-bottom: 5px;
 }
 
@@ -303,7 +308,7 @@ body {
   height: 20px;
   width: 100%;
   background-color: var(--footer-color);
-  color: white;
+  color: var(--text-color);
   align-items: center;
   justify-content: center;
 }
