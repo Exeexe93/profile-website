@@ -146,6 +146,7 @@ body {
   flex-direction: column;
   color: lightskyblue;
   text-decoration: none;
+  text-align: center;
 }
 
 .icon {
@@ -252,4 +253,31 @@ body {
 .timeline p {
   color: white;
   justify-content: justify;
+}
+
+.contact-container p {
+  color: white;
+  text-align: center;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.github-icon {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 10%;
+  height: 20px;
+  width: 100%;
+  background-color: rgb(6, 61, 95);
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
