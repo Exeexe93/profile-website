@@ -1,8 +1,30 @@
+/* Declare variables for theme */
+:root {
+  --background-color: black;
+  --hightlight-color: #bfa975;
+  --section-header-color: white;
+  --text-color: #9f9fd5;
+  --header-color: #5b63b7;
+  --footer-color: #2a272a;
+  --header-link-color: linear-gradient(
+    55deg,
+    #009de4 0%,
+    #00cfe6 51%,
+    #6afbcf 85%
+  );
+  --striking-color: linear-gradient(
+    55deg,
+    #5a3e51 0%,
+    #a883ba 51%,
+    #d9daff 85%
+  );
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: var(--background-color);
   /* background-image: url("../images/feather.jpg");
   background-repeat: no-repeat; */
 }
@@ -25,12 +47,13 @@ body {
   border-bottom-left-radius: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #031d94;
+  background-color: var(--header-color);
   z-index: 10;
 }
 
 .nav-link {
-  background: linear-gradient(55deg, #c525aa 0%, #a154e9 51%, #3dc3f3 85%);
+  /* background: linear-gradient(55deg, #c525aa 0%, #a154e9 51%, #3dc3f3 85%); */
+  background: var(--header-link-color);
   background-clip: text;
   margin-left: 10px;
   color: transparent;
@@ -38,7 +61,7 @@ body {
 
 .nav-link:hover,
 .nav-link:active {
-  background: #03cee9;
+  background: #6afbcf;
   background-clip: text;
   color: transparent;
 }
@@ -51,7 +74,9 @@ body {
 .title > h1,
 .title > h6 {
   text-align: center;
-  color: blue;
+  background: var(--striking-color);
+  background-clip: text;
+  color: transparent;
 }
 
 .title > h1 {
@@ -89,7 +114,7 @@ body {
   bottom: -2px;
   left: -2px;
   right: -2px;
-  background-color: rgb(122, 204, 255);
+  background-color: var(--hightlight-color);
   z-index: 1;
   filter: blur(40px);
 }
@@ -145,6 +170,7 @@ body {
   display: flex;
   flex-direction: column;
   color: lightskyblue;
+  background-color: var(--background-color);
   text-decoration: none;
   text-align: center;
 }
@@ -276,7 +302,7 @@ body {
   margin-top: 10%;
   height: 20px;
   width: 100%;
-  background-color: rgb(6, 61, 95);
+  background-color: var(--footer-color);
   color: white;
   align-items: center;
   justify-content: center;
