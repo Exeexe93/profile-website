@@ -15,10 +15,16 @@ Thanks for the following for the idea and resources to create my own profile web
 
   - [Web Programming with Python and JavaScript 2020](https://www.youtube.com/watch?v=Nn7EX3zkGUo&list=PLhQjrBD2T380xvFSUmToMMzERZ3qB5Ueu&index=1)
 
-- Font Awesome (icons)
+- Font Awesome (Icons)
 
   - [Website](https://fontawesome.com/)
 
 - Bootstrap (Components)
 
   - [Website](https://getbootstrap.com/)
+
+- Unsplash (Images)
+
+  - [Website](https://unsplash.com/)
+
+  - Special thanks for the image from [Clément H](https://unsplash.com/@clemhlrdt)
