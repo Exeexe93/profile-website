@@ -139,11 +139,23 @@ body {
   font-size: large;
 }
 
+.projects-overall-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.project-container + .project-container {
+  margin-top: 10%;
+}
+
 .project-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10%;
+  /* padding: 10%; */
 }
 
 .image-container {
