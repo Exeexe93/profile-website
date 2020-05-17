@@ -1,6 +1,6 @@
 ## My profile website (updated 14 May 2020)
 
-This website is created using html, css, bootstrap and jQuery.
+This website is created using html, css, bootstrap, jQuery and mediaQuery.
 
 ### Acknowledgement
 
