@@ -30,8 +30,6 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color);
-  /* background-image: url("../images/feather.jpg");
-  background-repeat: no-repeat; */
 }
 
 body {
@@ -57,7 +55,6 @@ body {
 }
 
 .nav-link {
-  /* background: linear-gradient(55deg, #c525aa 0%, #a154e9 51%, #3dc3f3 85%); */
   background: var(--header-link-color);
   background-clip: text;
   margin-left: 10px;
@@ -93,9 +90,85 @@ body {
   font-size: 16px;
 }
 
+@media screen and (max-width: 649px) {
+  .myphoto {
+    width: 300px;
+    height: auto;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-container .image-container {
+    margin-right: 0;
+  }
+
+  .project-container .project-details {
+    width: 80%;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .timeline .date::after {
+    left: -2.9rem;
+  }
+
+  .timeline .date::before {
+    left: -7rem;
+    max-width: 3rem;
+    text-align: right;
+  }
+
+  .timeline ul {
+    padding: 2rem;
+  }
+
+  .timeline h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 650px) {
+  .timeline .date::before {
+    left: -13rem;
+    max-width: 5rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .timeline .date::before {
+    left: -21rem;
+    min-width: 12rem;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .myphoto {
+    width: 500px;
+    height: 500px;
+  }
+
+  .timeline .date::after {
+    left: -5.9rem;
+  }
+
+  .timeline ul {
+    padding: 5rem;
+  }
+
+  .timeline h1 {
+    font-size: 2rem;
+  }
+}
+
 .myphoto {
-  width: 500px;
-  height: 500px;
   justify-self: center;
   z-index: 2;
 }
@@ -137,6 +210,7 @@ body {
   width: 60%;
   color: var(--text-color);
   font-size: large;
+  text-align: justify;
 }
 
 .projects-overall-container {
@@ -155,7 +229,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 10%; */
 }
 
 .image-container {
@@ -238,20 +311,29 @@ body {
   color: var(--text-color);
 }
 
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.timeline {
+  width: 50%;
+}
+
 .timeline ul {
   border-left: 4px solid var(--timeline-color);
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0, 0.05);
   margin: 0 auto;
   position: relative;
-  padding: 5rem;
   list-style: none;
   text-align: left;
   width: 70%;
 }
 
 .timeline h1 {
-  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 1rem;
@@ -295,18 +377,13 @@ body {
 .timeline .date::before {
   color: var(--text-color);
   content: attr(data-date);
-  left: -21rem;
-  text-align: right;
-  min-width: 12rem;
 }
 
 .timeline .date::after {
   content: "";
-  content: "";
   box-shadow: var(--timeline-point-color);
   background-color: var(--timeline-point-color);
   border-radius: 100%;
-  left: -5.8rem;
   height: 1.5rem;
   width: 1.5rem;
 }
