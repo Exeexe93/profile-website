@@ -8,7 +8,7 @@
   --footer-color: #2a272a;
   --timeline-point-color: #a883ba;
   --timeline-date-color: #00c9c8;
-  --timeline-color: #5a3e51;
+  --timeline-color: #2882bf;
   --timeline-seperator-color: white;
   --icon-text-color: lightskyblue;
   --header-link-color: linear-gradient(
@@ -194,6 +194,10 @@ body {
   }
 }
 
+.software-container > li {
+  list-style: none;
+}
+
 .image-icon {
   height: 30px;
   width: 30px;
@@ -240,6 +244,13 @@ body {
 .timeline h5 {
   opacity: 0.4;
   color: var(--text-color);
+}
+
+.timeline li:hover h1,
+.timeline li:hover h5,
+.timeline li:hover p {
+  opacity: 1;
+  color: var(--highlight-color);
 }
 
 .timeline .date {
@@ -311,4 +322,8 @@ body {
   color: var(--text-color);
   align-items: center;
   justify-content: center;
+}
+
+.about-title {
+  margin-bottom: 40px;
 }
