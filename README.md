@@ -1,4 +1,5 @@
 ## My profile website (updated 14 May 2020)
+https://exeexe93.github.io/profile-website/
 
 This website is created using html, css, bootstrap, jQuery and mediaQuery.
 
