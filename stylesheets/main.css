@@ -422,3 +422,8 @@ body {
 .about-title {
   margin-bottom: 40px;
 }
+
+.achievement-link {
+  color: var(--timeline-color);
+  text-decoration: none;
+}

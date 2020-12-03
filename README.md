@@ -1,4 +1,4 @@
-## My profile website (updated 14 May 2020)
+## My profile website (updated 03 Dec 2020)
 
 This website is created using html, css, bootstrap, jQuery and mediaQuery.
 
