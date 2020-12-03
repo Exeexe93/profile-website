@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+
 ## My profile website (updated 03 Dec 2020)
+
+https://exeexe93.github.io/profile-website/
+
+> > > > > > > 287a54df9b6b97eddf4428cfab3071d4b35a2d8d
 
 This website is created using html, css, bootstrap, jQuery and mediaQuery.
 
