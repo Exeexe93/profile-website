@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 ## My profile website (updated 03 Dec 2020)
 
 https://exeexe93.github.io/profile-website/
