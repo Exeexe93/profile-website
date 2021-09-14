@@ -1,4 +1,4 @@
-## My profile website (updated 03 Dec 2020)
+## My profile website (updated 14 Sep 2021)
 
 https://exeexe93.github.io/profile-website/
 
