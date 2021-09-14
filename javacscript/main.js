@@ -6,7 +6,7 @@ $(document).ready(function () {
         {
           scrollTop: 0,
         },
-        2000
+        500
       );
     } else {
       $("html, body")
@@ -15,7 +15,7 @@ $(document).ready(function () {
           {
             scrollTop: $($(this).attr("href")).offset().top - 10,
           },
-          2000
+          500
         );
     }
     return false;
