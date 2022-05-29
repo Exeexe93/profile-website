@@ -206,7 +206,7 @@ body {
 }
 
 .about > p {
-  margin-top: 5%;
+  margin-top: 90px;
   width: 60%;
   color: var(--text-color);
   font-size: large;
