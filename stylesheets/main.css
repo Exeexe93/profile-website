@@ -58,6 +58,7 @@ body {
   background: var(--header-link-color);
   background-clip: text;
   margin-left: 10px;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -65,6 +66,7 @@ body {
 .nav-link:active {
   background: #6afbcf;
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -78,8 +80,9 @@ body {
   text-align: center;
   background: var(--striking-color);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-}
+} 
 
 .title > h1 {
   font-size: 70px;
@@ -274,6 +277,7 @@ body {
 .icon {
   color: var(--text-color);
   -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }
 
 @-webkit-keyframes rotating {
